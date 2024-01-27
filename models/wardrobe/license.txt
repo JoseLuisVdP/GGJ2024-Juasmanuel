@@ -1,0 +1,8 @@
+Model Information:
+* title:	wardrobe
+* source:	https://sketchfab.com/3d-models/wardrobe-c964ce2ba52c42e682ae00c2b62b0d41
+* author:	Ravindra Kute (https://sketchfab.com/ajinkya.kute1oo)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

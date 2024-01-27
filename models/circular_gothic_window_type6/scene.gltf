@@ -1,0 +1,414 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 19960,
+      "max": [
+        24.839879989624023,
+        3.000000238418579,
+        24.839879989624023
+      ],
+      "min": [
+        -24.839879989624023,
+        -6.871554774079414e-07,
+        -24.839879989624023
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 239520,
+      "componentType": 5126,
+      "count": 19960,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 19960,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 119952,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 479040,
+      "componentType": 5126,
+      "count": 23544,
+      "max": [
+        24.839879989624023,
+        3.000000238418579,
+        24.839879989624023
+      ],
+      "min": [
+        -24.839879989624023,
+        -6.871554774079414e-07,
+        -24.839879989624023
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 761568,
+      "componentType": 5126,
+      "count": 23544,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 159680,
+      "componentType": 5126,
+      "count": 23544,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 479808,
+      "componentType": 5125,
+      "count": 141456,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1044096,
+      "componentType": 5126,
+      "count": 24860,
+      "max": [
+        20.54448699951172,
+        1.7381671667099,
+        20.54448699951172
+      ],
+      "min": [
+        -20.54448699951172,
+        1.253109097480774,
+        -20.54448699951172
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1342416,
+      "componentType": 5126,
+      "count": 24860,
+      "max": [
+        0.8997790217399597,
+        1.0,
+        0.17553840577602386
+      ],
+      "min": [
+        -0.8997791409492493,
+        -1.0,
+        -0.17553840577602386
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 348032,
+      "componentType": 5126,
+      "count": 24860,
+      "max": [
+        0.0,
+        0.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1045632,
+      "componentType": 5125,
+      "count": 38160,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "dariapr (https://sketchfab.com/dariapr)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/circular-gothic-window-type6-d9d2c80efcae426e91236a87ee5ba7cb",
+      "title": "Circular Gothic Window Type6"
+    },
+    "generator": "Sketchfab-15.50.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1198272,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 546912,
+      "byteOffset": 1198272,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1640736,
+      "byteOffset": 1745184,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3385920,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Window.005",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.8,
+          0.8,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.1788854381999832
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Glass.005",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.39568699999999996,
+          0.7323490000000002,
+          0.7999999999999999,
+          0.12647657592861233
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.047238239202252806
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Circular_Window_06_NoGlass_Window.005_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Circular_Window_06_Window.005_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Circular_Window_06_Glass.005_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "99d201c38d0940bb9dd643a0028ffee0.fbx"
+    },
+    {
+      "children": [
+        3,
+        5
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        7.549789948768648e-08,
+        0.0,
+        0.9999999999999971,
+        0.0,
+        0.9999999999999574,
+        -2.8212996916465727e-07,
+        -7.549789948768648e-08,
+        0.0,
+        2.8212996916465727e-07,
+        0.9999999999999603,
+        -2.1316282072803006e-14,
+        0.0,
+        0.0,
+        0.0,
+        -57.20653533935547,
+        1.0
+      ],
+      "name": "Circular_Window_06_NoGlass"
+    },
+    {
+      "mesh": 0,
+      "name": "Circular_Window_06_NoGlass_Window.005_0"
+    },
+    {
+      "children": [
+        6,
+        7
+      ],
+      "matrix": [
+        7.549789948768648e-08,
+        0.0,
+        0.9999999999999971,
+        0.0,
+        0.9999999999999574,
+        -2.8212996916465727e-07,
+        -7.549789948768648e-08,
+        0.0,
+        2.8212996916465727e-07,
+        0.9999999999999603,
+        -2.1316282072803006e-14,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Circular_Window_06"
+    },
+    {
+      "mesh": 1,
+      "name": "Circular_Window_06_Window.005_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Circular_Window_06_Glass.005_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

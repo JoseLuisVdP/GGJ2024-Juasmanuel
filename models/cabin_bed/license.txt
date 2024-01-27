@@ -1,0 +1,8 @@
+Model Information:
+* title:	Cabin Bed
+* source:	https://sketchfab.com/3d-models/cabin-bed-5b644ea760a0456492a489d3b09a5c8e
+* author:	GuillaumeOj (https://sketchfab.com/GuillaumeOj)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq74jdalpftbh"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/camita.gd" id="1_fdont"]
+[ext_resource type="PackedScene" uid="uid://doh4m6lu7gt4s" path="res://models/cabin_bed/scene.gltf" id="1_vanjw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2k2ah"]
+size = Vector3(0.962036, 0.671387, 1.52277)
+
+[node name="camita" type="StaticBody3D"]
+script = ExtResource("1_fdont")
+peso = 25
+puntuacion = 666
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_vanjw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.30802, 0, -0.666631)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.453633, 0.477678, 1.16184)
+shape = SubResource("BoxShape3D_2k2ah")

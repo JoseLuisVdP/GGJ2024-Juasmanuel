@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv07td4l0i6jo"]
+
+[ext_resource type="PackedScene" uid="uid://il0mht4xy4ys" path="res://models/fan/scene.gltf" id="1_k0sy2"]
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_xoye2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nwrl8"]
+size = Vector3(1, 0.420166, 0.243736)
+
+[node name="fan" type="CollisionShape3D"]
+script = ExtResource("1_xoye2")
+peso = 5
+puntuacion = 123
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_k0sy2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.217407, -0.137058)
+shape = SubResource("BoxShape3D_nwrl8")

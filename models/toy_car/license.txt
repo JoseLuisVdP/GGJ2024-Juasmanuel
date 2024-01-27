@@ -1,0 +1,8 @@
+Model Information:
+* title:	Toy Car
+* source:	https://sketchfab.com/3d-models/toy-car-25d63b7d00d54bb096f1841df1f046ac
+* author:	Fridqeir (https://sketchfab.com/Fridqeir)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

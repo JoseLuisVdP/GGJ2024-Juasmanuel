@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://oxnpkieged4x"]
+
+[ext_resource type="Texture2D" uid="uid://b584fow17wql2" path="res://Textures/—Pngtree—black smoke explosion fire_6436593.PNG" id="1_dmblb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_834yg"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_dmblb")
+albedo_texture_msdf = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_khqyk"]
+emission_shape = 1
+emission_sphere_radius = 2.3
+spread = 180.0
+initial_velocity_min = 20.0
+initial_velocity_max = 25.0
+angular_velocity_max = 309.11
+scale_min = 0.2
+
+[sub_resource type="QuadMesh" id="QuadMesh_l8grw"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sparks" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.372062, 0.0936543, -0.805869)
+material_override = SubResource("StandardMaterial3D_834yg")
+amount = 20
+lifetime = 0.6
+speed_scale = 0.4
+explosiveness = 1.0
+fixed_fps = 60
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_khqyk")
+draw_pass_1 = SubResource("QuadMesh_l8grw")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d04r0hgljysc8"]
+
+[ext_resource type="PackedScene" uid="uid://da2uk6ux5m4rh" path="res://models/chair/scene.gltf" id="1_enms7"]
+[ext_resource type="Script" path="res://silla.gd" id="1_uee3l"]
+
+[node name="silla" type="StaticBody3D"]
+script = ExtResource("1_uee3l")
+peso = 10
+puntuacion = 196
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("1_enms7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]

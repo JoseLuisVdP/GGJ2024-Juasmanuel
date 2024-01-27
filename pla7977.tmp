@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b46twnvul3654"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_o5r1l"]
+[ext_resource type="PackedScene" uid="uid://cldomng13lot7" path="res://models/fox/zorro.glb" id="2_yxta2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b7yd6"]
+radius = 0.19453
+height = 0.971228
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(0.999817, 0, 0.0191102, 0, 1, 0, -0.0191102, 0, 0.999817, 0, 0, 0)
+script = ExtResource("1_o5r1l")
+
+[node name="ControlFox" type="Node3D" parent="."]
+
+[node name="zorro" parent="ControlFox" instance=ExtResource("2_yxta2")]
+transform = Transform3D(-0.4, 0, -0.000593436, 0, 0.4, 0, 0.000593436, 0, -0.4, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(5.25439e-15, 1.20206e-07, 2.75, 2.75, -1.20206e-07, 0, 1.20206e-07, 2.75, -1.20206e-07, -0.0367079, 0.975776, 0.00931496)
+shape = SubResource("CapsuleShape3D_b7yd6")
+
+[node name="CamOG" type="Node3D" parent="."]
+transform = Transform3D(1, 0, -0.000977375, 0, 1, 0, 0.000977375, 0, 1, 0, 1.10493, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CamOG"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.64894, 0.00468421, 3.31604)
+fov = 80.0

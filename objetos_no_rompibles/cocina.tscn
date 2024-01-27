@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://db1byha13syqf"]
+
+[ext_resource type="PackedScene" uid="uid://c3757lnt8q5vw" path="res://models/blue_kitchen_marble_counter__sink/scene.gltf" id="1_i0j3e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nrkoe"]
+size = Vector3(2.11987, 0.857544, 0.610631)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ry2at"]
+size = Vector3(0.437836, 1, 0.639496)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wyu1m"]
+size = Vector3(0.609863, 0.930176, 0.438538)
+
+[node name="cocina" type="CollisionShape3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_i0j3e")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.482977, 0.536031, -1.31457)
+shape = SubResource("BoxShape3D_nrkoe")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.39842, 0.444883, -0.984996)
+shape = SubResource("BoxShape3D_ry2at")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.37258, 0.497422, 0.330016)
+shape = SubResource("BoxShape3D_wyu1m")

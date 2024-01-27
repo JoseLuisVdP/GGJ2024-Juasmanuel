@@ -1,0 +1,11 @@
+Model Information:
+* title:	Scary little foy
+* source:	https://sketchfab.com/3d-models/scary-little-foy-3333c2b6e8064005bdf2b1f3bf5bb751
+* author:	Noa Seller (https://sketchfab.com/NoaSeller)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Scary little foy" (https://sketchfab.com/3d-models/scary-little-foy-3333c2b6e8064005bdf2b1f3bf5bb751) by Noa Seller (https://sketchfab.com/NoaSeller) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

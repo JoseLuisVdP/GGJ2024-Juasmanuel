@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv6ftilwocsi"]
+
+[ext_resource type="Script" path="res://mesa.gd" id="1_xado1"]
+[ext_resource type="PackedScene" uid="uid://d2gyhvismh2aa" path="res://models/simple_office_table/scene.gltf" id="2_noixw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ilyxy"]
+size = Vector3(0.953369, 0.971314, 1.86176)
+
+[node name="mesa" type="StaticBody3D"]
+script = ExtResource("1_xado1")
+peso = 17
+puntuacion = 255
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_noixw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00831628, -0.0667208, -0.29274)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00344704, 0.265509, -0.309291)
+shape = SubResource("BoxShape3D_ilyxy")

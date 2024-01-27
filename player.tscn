@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://b46twnvul3654"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_o5r1l"]
+[ext_resource type="PackedScene" uid="uid://cldomng13lot7" path="res://models/fox/zorro.glb" id="2_yxta2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b7yd6"]
+radius = 0.19453
+height = 0.971228
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d0sxy"]
+radius = 0.2
+height = 0.5
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(0.999817, 0, 0.0191102, 0, 1, 0, -0.0191102, 0, 0.999817, 0, 0, 0)
+script = ExtResource("1_o5r1l")
+
+[node name="ControlFox" type="Node3D" parent="."]
+
+[node name="zorro" parent="ControlFox" instance=ExtResource("2_yxta2")]
+transform = Transform3D(-0.4, 0, -3.49691e-08, 0, 0.4, 0, 3.49691e-08, 0, -0.4, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(5.55112e-15, 1.30385e-07, 2.75, 2.75, -1.20206e-07, 0, 1.20206e-07, 2.75, -1.30385e-07, -0.0367079, 0.522046, 0.00931496)
+shape = SubResource("CapsuleShape3D_b7yd6")
+
+[node name="CamOG" type="Node3D" parent="."]
+transform = Transform3D(0.808227, -5.76818e-08, -0.588872, 6.51926e-09, 0.952993, -9.38371e-08, 0.588872, 6.8618e-08, 0.808227, 0, 1.10493, 0)
+
+[node name="TimerEmbestida" type="Timer" parent="."]
+process_callback = 0
+wait_time = 2.0
+one_shot = true
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(0.996318, -0.0497603, 0.0680153, 0.052336, 0.951687, 0, -0.0679221, 0.00339232, 0.997685, 0, 1.10493, 0)
+shape = SubResource("CapsuleShape3D_d0sxy")
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+transform = Transform3D(0.999994, 0.00291106, 0.00181913, -0.00312336, 1.0486, 0.0388969, -0.00170996, -0.0370736, 0.999311, 1.85623, 1.44204, 3.33281)
+current = true
+fov = 80.0

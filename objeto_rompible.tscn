@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://csrmdcblpcgol"]
+
+[ext_resource type="Script" path="res://objeto_rompible.gd" id="1_x3a0j"]
+
+[node name="objetoRompible" type="StaticBody3D"]
+script = ExtResource("1_x3a0j")

@@ -1,0 +1,8 @@
+Model Information:
+* title:	Toilet
+* source:	https://sketchfab.com/3d-models/toilet-0db3df49d8704811bfbbf03486581613
+* author:	Anom Purple Modelling (https://sketchfab.com/Anom404)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

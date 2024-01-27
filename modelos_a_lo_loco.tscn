@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://ctwxhfv1r4ewe"]
+
+[ext_resource type="PackedScene" uid="uid://da2uk6ux5m4rh" path="res://models/chair/scene.gltf" id="1_xqf2e"]
+[ext_resource type="PackedScene" uid="uid://c3757lnt8q5vw" path="res://models/blue_kitchen_marble_counter__sink/scene.gltf" id="2_qdqgu"]
+[ext_resource type="PackedScene" uid="uid://cmnqr8qgw33hv" path="res://models/fox/scene.gltf" id="3_2i037"]
+[ext_resource type="PackedScene" uid="uid://d4as7fvxf4i2p" path="res://models/modern_entertainment_center_free/scene.gltf" id="4_tqiym"]
+[ext_resource type="PackedScene" uid="uid://d2gyhvismh2aa" path="res://models/simple_office_table/scene.gltf" id="5_yl3ff"]
+[ext_resource type="PackedScene" uid="uid://cvqwfjdnf5d42" path="res://models/wardrobe/scene.gltf" id="6_12qed"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33614, 0, 0)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_xqf2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.43273, 1.19209e-07, -1.57919)
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("2_qdqgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.957443, 0, -0.635084)
+
+[node name="Sketchfab_Scene3" parent="." instance=ExtResource("3_2i037")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.825523, 0, -1.03613)
+
+[node name="Sketchfab_Scene4" parent="." instance=ExtResource("4_tqiym")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 4.37424, 0, -1.63595)
+
+[node name="Sketchfab_Scene5" parent="." instance=ExtResource("5_yl3ff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47812, 0, -0.778247)
+
+[node name="Sketchfab_Scene6" parent="." instance=ExtResource("6_12qed")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.78348, -2.38419e-07, -1.39452)

@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
 size = Vector3(2.55716, 0.738281, 1.49329)
 
-[node name="fan" type="StaticBody3D" groups=["destruible"]]
+[node name="mesa" type="StaticBody3D" groups=["destruible"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -0.154145, 0.0240173)
 script = ExtResource("1_62jcp")
 peso = 5

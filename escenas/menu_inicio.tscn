@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7743rggyd6x1"]
 
 [ext_resource type="Script" path="res://escenas/menu_inicio.gd" id="1_0xa3v"]
-[ext_resource type="Theme" uid="uid://dje0qu2hiofjx" path="res://themes/TemaLabel.tres" id="1_75oq5"]
 [ext_resource type="Theme" uid="uid://ci820nhchx783" path="res://themes/themebotones.tres" id="2_he2su"]
+[ext_resource type="AudioStream" uid="uid://bw44ckrp2yua1" path="res://title_screen.wav" id="3_0n36y"]
 
 [node name="MenuInicio" type="Control"]
 layout_mode = 3
@@ -25,17 +25,6 @@ offset_top = 2.0
 offset_bottom = 576.873
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("1_75oq5")
-text = "Solobino Walking"
-horizontal_alignment = 1
-
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
-clip_children = 1
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-
 [node name="Button" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
@@ -56,3 +45,9 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("2_he2su")
 text = "Salir"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_0n36y")
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

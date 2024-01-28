@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://caqvcgpcd3b0q"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_gbuct"]
+[ext_resource type="PackedScene" uid="uid://5w2gna51lbu1" path="res://escenas/PUERTA.glb" id="2_tasgs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
+size = Vector3(2.30506, 5.4003, 1.65505)
+
+[node name="puerta" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -1.14052, 0.0240173)
+script = ExtResource("1_gbuct")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33469, 3.54495, 0.611581)
+shape = SubResource("BoxShape3D_rdy42")
+
+[node name="PUERTA" parent="." instance=ExtResource("2_tasgs")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 8.10929, 0.154145, -0.0134349)

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://da2uk6ux5m4rh" path="res://models/chair/scene.gltf" id="1_enms7"]
 [ext_resource type="Script" path="res://silla.gd" id="1_uee3l"]
 
-[node name="silla" type="StaticBody3D"]
+[node name="silla" type="StaticBody3D" groups=["destruible"]]
 script = ExtResource("1_uee3l")
 peso = 10
 puntuacion = 196

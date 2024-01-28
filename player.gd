@@ -25,7 +25,7 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		camera.rotate_x(deg_to_rad(event.relative.y * sens))
+		camera.rotate_x(deg_to_rad(-event.relative.y * sens))
 		rotate_y(deg_to_rad(-event.relative.x * sens))
 		zorrete.rotate_y(deg_to_rad(event.relative.x * sens))  #para que el zorro no se mueva con la cam
 		
@@ -46,15 +46,15 @@ func _process(_delta):
 	
 
 func _physics_process(delta):
+	
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	
 	if Input.is_action_just_pressed("correr"):
 		embestida()
-	if Input.is_action_pressed("clic1"):
-		pass
-	if Input.is_action_pressed("clic2"):
-		pass
+	if Input.is_action_just_pressed("quit"):
+		get_tree().quit()
+
 	velocidad = velocidadEmbiste if embistiendo() else velocidadBase
 	inputDir = Input.get_vector("izquierda", "derecha", "arriba", "abajo")
 	direccion = (transform.basis * Vector3(inputDir.x, 0, inputDir.y)).normalized()
@@ -84,4 +84,5 @@ func _on_area_3d_body_entered(body):
 		if body.is_in_group("destruible"):
 			var boom = explota.instantiate()
 			add_child(boom, false, INTERNAL_MODE_DISABLED)
+			body.emit_signal("puntuar")
 			body.queue_free()

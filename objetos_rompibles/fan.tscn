@@ -3,16 +3,28 @@
 [ext_resource type="PackedScene" uid="uid://il0mht4xy4ys" path="res://models/fan/scene.gltf" id="1_k0sy2"]
 [ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_xoye2"]
 
+<<<<<<< HEAD
 [sub_resource type="BoxShape3D" id="BoxShape3D_nwrl8"]
 size = Vector3(0.282227, 0.414673, 0.210735)
+=======
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkar1"]
+size = Vector3(0.4258, 0.413757, 0.263672)
+>>>>>>> ppk
 
-[node name="fan" type="CollisionShape3D"]
+[node name="fan" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, 0, 0.0240173)
 script = ExtResource("1_xoye2")
 peso = 5
 puntuacion = 123
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("1_k0sy2")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, -0.153538, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.195801, 0.21466, -0.120558)
 shape = SubResource("BoxShape3D_nwrl8")
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.118742, 0.205109, -0.13848)
+shape = SubResource("BoxShape3D_fkar1")
+>>>>>>> ppk

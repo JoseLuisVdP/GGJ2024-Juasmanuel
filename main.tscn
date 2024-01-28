@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://qbjp4yyufq5t"]
+[gd_scene load_steps=12 format=3 uid="uid://qbjp4yyufq5t"]
 
 [ext_resource type="PackedScene" uid="uid://da2uk6ux5m4rh" path="res://models/chair/scene.gltf" id="1_caqh1"]
 [ext_resource type="PackedScene" uid="uid://c3757lnt8q5vw" path="res://models/blue_kitchen_marble_counter__sink/scene.gltf" id="2_2gek8"]
 [ext_resource type="PackedScene" uid="uid://lo1j2wefx5li" path="res://menu_inicio.tscn" id="3_pxbpw"]
 [ext_resource type="PackedScene" uid="uid://b46twnvul3654" path="res://player.tscn" id="4_2524j"]
+[ext_resource type="PackedScene" uid="uid://dv07td4l0i6jo" path="res://objetos_rompibles/fan.tscn" id="5_g527a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o7ytl"]
 size = Vector3(100, 3, 100)
@@ -113,3 +114,6 @@ light_indirect_energy = 6.538
 light_volumetric_fog_energy = 10.026
 light_size = 0.892
 omni_range = 24.755
+
+[node name="fan" parent="." instance=ExtResource("5_g527a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00731, 0, 2.33063)

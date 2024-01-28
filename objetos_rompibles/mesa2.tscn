@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b10i636wq0cyd"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_suhry"]
+[ext_resource type="PackedScene" uid="uid://pjlwpkk7cs7d" path="res://models/MESA-CAFE-SOFA.glb" id="2_ulmuw"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5sqik"]
+height = 0.693161
+radius = 0.283287
+
+[node name="fan" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.46526, 0, -0.548398)
+script = ExtResource("1_suhry")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55303, 0.370051, 0.582582)
+shape = SubResource("CylinderShape3D_5sqik")
+
+[node name="MESA-CAFE-SOFA2" parent="." instance=ExtResource("2_ulmuw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.1827, 0, -3.12309)

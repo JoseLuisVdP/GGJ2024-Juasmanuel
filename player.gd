@@ -32,7 +32,8 @@ func _input(event):
 		anguloAnteriorCamara = camera.rotation.x
 		
 func embestida():
-	tiempoEmbiste.start()
+	if !embistiendo():	
+		tiempoEmbiste.start()
 	
 func embistiendo():
 	return !tiempoEmbiste.is_stopped()

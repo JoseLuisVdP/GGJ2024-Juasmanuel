@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw2slwah1exih"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_8w7ou"]
+[ext_resource type="PackedScene" uid="uid://sqabuqm6vptg" path="res://models/SOFA-GRANDE.glb" id="2_bm7iw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
+size = Vector3(3.36093, 1.23334, 1.2605)
+
+[node name="sofa1" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -0.154145, 0.0240173)
+script = ExtResource("1_8w7ou")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22684, 0.770695, -0.411966)
+shape = SubResource("BoxShape3D_rdy42")
+
+[node name="SOFA-GRANDE2" parent="." instance=ExtResource("2_bm7iw")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 10.3702, 0.154145, -5.11107)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://6u6cbkec4ows"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_62jcp"]
+[ext_resource type="PackedScene" uid="uid://dbhfo6lvt408y" path="res://models/MESA-CAFE.glb" id="2_pm506"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
+size = Vector3(2.55716, 0.738281, 1.49329)
+
+[node name="fan" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -0.154145, 0.0240173)
+script = ExtResource("1_62jcp")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.322306, 0.56046, 0.283736)
+shape = SubResource("BoxShape3D_rdy42")
+
+[node name="MESA-CAFE2" parent="." instance=ExtResource("2_pm506")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 11.8738, 0.154145, -1.68932)

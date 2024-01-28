@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://deg1jxoi2xelp"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_ym6ef"]
+[ext_resource type="PackedScene" uid="uid://bpuxv1bjl2wpa" path="res://models/ESTANTERIA2.glb" id="2_6xo30"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkar1"]
+size = Vector3(2.68403, 2.76303, 0.660767)
+
+[node name="estanteria" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, 0, 0.0240173)
+script = ExtResource("1_ym6ef")
+peso = 5
+puntuacion = 123
+
+[node name="ESTANTERIA22" parent="." instance=ExtResource("2_6xo30")]
+transform = Transform3D(0.000691125, 0, -0.6, 0, 0.6, 0, 0.6, 0, 0.000691125, 7.93944, -0.0154756, 15.7311)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28149, 1.37975, -1.31448)
+shape = SubResource("BoxShape3D_fkar1")

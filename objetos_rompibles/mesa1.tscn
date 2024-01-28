@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx6lhnotqjj3f"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_8yf1s"]
+[ext_resource type="PackedScene" uid="uid://3t78gv5vlrtt" path="res://models/MESA-CAFE-2.glb" id="2_3xkuq"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ep1k5"]
+height = 0.547408
+radius = 0.274683
+
+[node name="mesa1" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -0.154145, 0.0240173)
+script = ExtResource("1_8yf1s")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00264955, 0.429601, 0.298812)
+shape = SubResource("CylinderShape3D_ep1k5")
+
+[node name="MESA-CAFE-22" parent="." instance=ExtResource("2_3xkuq")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 12.8676, 0.137536, -5.2086)

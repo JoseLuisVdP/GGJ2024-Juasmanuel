@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bft8n08l4in5p"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_l2eb5"]
+[ext_resource type="PackedScene" uid="uid://c4nqeyq0bkhwa" path="res://models/SOFA-PEQUEÑO-AZUL.glb" id="2_fpcak"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
+size = Vector3(1.87718, 2.96811, 2.02502)
+
+[node name="silla" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -1.45736, 0.0240173)
+script = ExtResource("1_l2eb5")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.870356, 0, 0.492424, 0, 1, 0, -0.492424, 0, 0.870356, -0.142779, 2.90263, -1.1432)
+shape = SubResource("BoxShape3D_rdy42")
+
+[node name="SOFA-PEQUEÑO-AMARILLO2" parent="." instance=ExtResource("2_fpcak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.386, 1.38736, -15.0252)

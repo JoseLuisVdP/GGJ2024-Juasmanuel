@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcjsoawecuxu5"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_qwn47"]
+[ext_resource type="PackedScene" uid="uid://b6xbrf63pojl7" path="res://models/SILLA.glb" id="2_7fa2y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rdy42"]
+size = Vector3(0.75568, 1.21472, 0.740853)
+
+[node name="silla" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0929581, -0.154145, 0.0240173)
+script = ExtResource("1_qwn47")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.338608, 0.79868, 0.196612)
+shape = SubResource("BoxShape3D_rdy42")
+
+[node name="SILLA2" parent="." instance=ExtResource("2_7fa2y")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 9.3313, 0.112771, -6.43949)

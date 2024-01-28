@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dapw8w11hryby"]
+
+[ext_resource type="Script" path="res://objetos_rompibles/fan.gd" id="1_ph634"]
+[ext_resource type="PackedScene" uid="uid://id842sx5s86l" path="res://models/ESTANTERIA-PEQUEÑA.glb" id="2_7wrbn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkar1"]
+size = Vector3(1.69898, 2.75859, 0.535278)
+
+[node name="estanteriaP" type="StaticBody3D" groups=["destruible"]]
+transform = Transform3D(-0.999758, 0, 0.0220068, 0, 1, 0, -0.0220068, 0, -0.999758, 0.0929581, 0, 0.0240173)
+script = ExtResource("1_ph634")
+peso = 5
+puntuacion = 123
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87518, 1.40911, 0.461096)
+shape = SubResource("BoxShape3D_fkar1")
+
+[node name="ESTANTERIA-PEQUEÑA2" parent="." instance=ExtResource("2_7wrbn")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 14.0481, -0.00987464, -10.1423)

@@ -1,14 +1,15 @@
 extends CharacterBody3D
 
 
-@export var velocidadBase = 8.0
+@export var velocidadBase = 6.0
 var velocidad
-var velocidadEmbiste = 20
+var velocidadEmbiste = 18.0
 @export var sens = 0.4
 @onready var camera = $SpringArm3D
 @onready var cam3D = $SpringArm3D/Camera3D
 @onready var zorrete = $ControlFox
 @onready var animaciones = $ControlFox/zorro/AnimationPlayer
+@export var explota : PackedScene
 var embiste = 2
 var inputDir
 var direccion = Vector3.ZERO
@@ -34,15 +35,15 @@ func embestida():
 	tiempoEmbiste.start()
 	
 func embistiendo():
-	print(tiempoEmbiste.is_stopped())
 	return !tiempoEmbiste.is_stopped()
 
-func _process(delta):
+func _process(_delta):
 	if camera.rotation.x > -0.2 :
 		camera.rotate_x(-0.2 - camera.rotation.x)
 	elif camera.rotation.x < -0.9:
 		camera.rotate_x(-0.9 - camera.rotation.x)
 	
+
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -53,7 +54,7 @@ func _physics_process(delta):
 		pass
 	if Input.is_action_pressed("clic2"):
 		pass
-	var velocidad = velocidadEmbiste if embistiendo() else velocidadBase
+	velocidad = velocidadEmbiste if embistiendo() else velocidadBase
 	inputDir = Input.get_vector("izquierda", "derecha", "arriba", "abajo")
 	direccion = (transform.basis * Vector3(inputDir.x, 0, inputDir.y)).normalized()
 	if direccion:
@@ -75,3 +76,11 @@ func _physics_process(delta):
 
 	move_and_slide()
 		
+
+
+func _on_area_3d_body_entered(body):
+	if embistiendo():
+		if body.is_in_group("destruible"):
+			var boom = explota.instantiate()
+			add_child(boom, false, INTERNAL_MODE_DISABLED)
+			body.queue_free()

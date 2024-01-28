@@ -5,4 +5,5 @@
 [node name="GPUParticles3D" type="GPUParticles3D"]
 amount = 100
 fixed_fps = 80
+collision_base_size = 0.0
 process_material = SubResource("ParticleProcessMaterial_yyl0p")
